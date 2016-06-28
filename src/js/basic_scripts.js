@@ -156,10 +156,32 @@ function headeButer(menuMobile,toggleMenu){
 
 /* /expresion for numbers with spaces */
 
+function fullpage() {
+
+
+    $('#fullpage').fullpage({
+        anchors:['firstSection', 'secondSection', 'thirdSection','fourthSection','fifthSection'],
+        menu: '.main-nav ul',
+        fixedElements: '.header,.footer',
+        responsiveWidth:1030,
+        responsiveHeight:800
+    });
+
+    $('.section-button').click(function() {
+        //event.preventDefault();
+        $.fn.fullpage.moveSectionDown();
+
+        //console.log('$.fn.fullpage.moveSectionDown() ' , $.fn.fullpage.moveSectionDown());
+    });
+
+    // $.fn.fullpage.setMouseWheelScrolling(false);
+    // $.fn.fullpage.setAllowScrolling(false);
+}
+
 /* DOCUMENT READY  */
 $(document).ready(function() {
     //oneHeightItems();
-    $('.footer_placeholder').height($('.footer').outerHeight());
+     fullpage();
 
     //goTo();
     //animationBlock($('.setion-animate'));
@@ -167,5 +189,4 @@ $(document).ready(function() {
 
 $(window).resize(function() {
 
-    $('.footer_placeholder').height($('.footer').outerHeight());
 });
