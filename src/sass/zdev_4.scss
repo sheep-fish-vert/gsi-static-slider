@@ -5,7 +5,7 @@
         .logo-wrap{display: flex;
             img{margin-right: 20px;}
             .logo-title{display: flex;flex-direction: column;justify-content: space-around;
-                span{font-family: "Roboto Condensed";color:#222020;font-size: 14px;font-weight: bold;text-transform: uppercase;}
+                span{font-family: "Roboto Condensed";color:#222020;font-size: 14px;font-weight: bold;text-transform: uppercase;white-space: nowrap}
             }
         }
         .logo-rotate-text{position: absolute;transform: rotate(-90deg);left: -180px;white-space: nowrap;top: 301px;
@@ -20,7 +20,7 @@
                 a{font-weight: bold;}
             }
         }
-        a{color: white;text-transform: uppercase;text-decoration: none;font-family: "Roboto Condensed";font-size: 16px;font-weight: 300;}
+        a{color: white;text-transform: uppercase;text-decoration: none;font-family: "Roboto Condensed";font-size: 16px;font-weight: 300;white-space: nowrap}
     }
 }
 .footer{
@@ -29,7 +29,7 @@
         &:after{display: none;}
     }
 }
-.section-button{display: flex;justify-content: flex-end;z-index: 5;position: absolute;right: 0;bottom: 205px;
+.section-button{display: flex;justify-content: flex-end;z-index: 5;position: relative;padding-top: 30px;
     &>span{width: 143px;height: 50px;align-items: center;display: flex;justify-content: center;background: linear-gradient( 75deg, rgb(146,39,143) 0%, rgb(14,118,189) 100%);color: white;text-decoration: none;font-weight: bold;font-size: 16px;border-radius: 41px;transition:all ease .2s;    box-shadow: 0px 14px 37px 0px #000;cursor: pointer;
         &>span{letter-spacing: 1px;margin-right: 6px;text-transform: uppercase;cursor: pointer;}
         i{font-size: 14px;font-weight: normal;margin-top: -3px;}
@@ -42,7 +42,7 @@
         .section-img{position: absolute;top: 0;left: 253px;bottom: 90px;
             img{max-width: none;height: 100%;object-fit: cover;}
         }
-        .section-text{padding-top: 308px;padding-left: 294px;position: relative;z-index: 2;font-size: 20px;font-family: "Roboto";color: rgb(255, 255, 255);line-height: 1.2;font-weight: 300;max-width: 979px;
+        .section-text{padding-top: 250px;padding-left: 294px;position: relative;z-index: 2;font-size: 20px;font-family: "Roboto";color: rgb(255, 255, 255);line-height: 1.2;font-weight: 300;max-width: 979px;
             p{margin: 0;margin-bottom: 28px;}
 
             ul{list-style-type: none;padding-left: 0;margin: 0;max-width:635px;
@@ -58,7 +58,7 @@
         }
         .section-form-wrap{
             form{display: flex;flex-wrap: wrap;}
-            .section-form-center{display: flex;flex:1;
+            .section-form-center{display: flex;width: 100%;
                 .form_row{display: flex;margin-bottom: 11px;}
                 .section-form-left{
                     input{width: 200px;height: 49px;background-color: #fff;border:none;border-radius: 7px;padding: 11px;font-size: 16px;color: #7f7f7f;border:1px solid transparent;
@@ -73,7 +73,10 @@
             }
             .contact-form-item{display: flex;justify-content: flex-end;width: 100%;
                 button{width: 195px;height: 50px;align-items: center;display: flex;justify-content: center;background: linear-gradient( 75deg, rgb(146,39,143) 0%, rgb(14,118,189) 100%);color: white;text-decoration: none;font-weight: bold;font-size: 16px;border-radius: 41px;transition:all ease .2s;border:none;margin-right: -13px;cursor: pointer;box-shadow: 0px 14px 37px 0px #000;
-                    span{letter-spacing: 1px;margin-right: 6px;text-transform: uppercase;}
+                    &>span{display: flex;align-items: center;text-align: center;justify-content: center;width: 100%;
+                        span{letter-spacing: 1px;margin-right: 6px;text-transform: uppercase;}
+                    }
+
                     i{font-size: 14px;font-weight: normal;margin-top: -3px;}
                     &:hover{opacity: .93;}
                 }
