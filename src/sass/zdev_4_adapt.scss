@@ -13,7 +13,11 @@
     }
     .section .mbox .section-img{width: 1090px;}
     .section .mbox .section-img img{max-width: 100%;height: auto;}
-    .section-button{bottom: 155px;right: -25px;}
+    //.section-button{bottom: 155px;right: -25px;}
+    .section .mbox .section-text{font-size: 16px;}
+    .section .mbox .section-text ul li{margin-bottom: 12px;}
+    .section-button{padding-top: 20px;}
+    .section-button > span{font-size: 14px;}
 }
 @media screen and (max-width: 1300px) and (max-height: 640px){
     .section-button{bottom: 155px;right: -62px;}

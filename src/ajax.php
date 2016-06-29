@@ -26,7 +26,7 @@
     require 'class.phpmailer.php';
 
     $mail = new PHPMailer();
-    $mail->AddAddress('radion91@gmail.com','');   // кому - адрес, Имя
+    $mail->AddAddress('info@globec.pro','');   // кому - адрес, Имя
     $mail->IsHTML(true);                        // выставляем формат письма HTML
     $mail->Subject = $subject; // тема письма
     $mail->CharSet = "UTF-8";                   // кодировка
